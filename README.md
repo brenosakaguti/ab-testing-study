@@ -19,4 +19,4 @@ Os dados para o teste vieram na forma de uma tabela contendo várias informaçõ
 De acordo com as especificações do estudo, o resultado esperado é um aumento da taxa de conversão de 13% para 15%, o que equivale a um *effect size* de 0,058. Usando um Poder de 80% e nível de significância de 95%, calculamos que o número de pontos de dados necessários para observar o efeito é 4720. Esse foi o número de observações utilizado durante o resto do teste.
 
 ## Teste de hipótese
-Usando os dados obtidos, foi realizado um Teste Z entre os grupos controle e 
+Usando os dados obtidos, foi realizado um Teste Z entre os grupos controle e tratamento, cada um com 4720 observações.
