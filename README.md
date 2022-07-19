@@ -20,3 +20,5 @@ De acordo com as especificações do estudo, o resultado esperado é um aumento 
 
 ## Teste de hipótese
 Usando os dados obtidos, foi realizado um Teste Z entre os grupos controle e tratamento, cada um com 4720 observações.
+
+O teste resultou em um Valor-p de 0,273, maior que o valor alvo para o teste de 0,05. Isso significa que o resultado não foi estatisticamente distinto, ou seja, o novo *design* do *website* não fez diferença na taxa de conversão de clientes.
