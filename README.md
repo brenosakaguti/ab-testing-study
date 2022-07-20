@@ -30,3 +30,27 @@ Um outro *website* de *e-commerce* apresenta uma questão diferente. Anteriormen
 Originalmente, o *website* tinha uma média de vendas de $1800 por cliente, e o objetivo é de aumentar as vendas em 1%, ou seja, uma média de $1818 por cliente.
 
 ## Dados
+Para este teste, foram fornecidos dados de mais de 45 mil compras realizadas no site, categorizados pelo tipo de preenchimento utilizado (automático ou manual). O grupo A, de clientes usando preenchimento manual, serve como grupo controle para o experimento, enquanto o grupo B, usando preenchimento automático, será o grupo de tratamento.
+
+![tabela de dados](/images/tabela2.png)
+
+*A tabela de dados*
+
+## Tamanho de Efeito e Poder
+O objetivo da mudança de método de compra é de aumentar o valor médio de vendas de $1800 para $1818. Usando o grupo controle para estimar a variância, calculamos por meio do D de Cohen que o tamanho de efeito é 0,013.
+
+Calculando novamente o número de observações necessárias para um teste de poder 80% e significância 95%, obtivemos um número necessário de 90.725. Isso é muito mais que os dados que temos, aproximadamente 23.000 para cada grupo.
+
+Com o número de observações que temos, a chance de observar o efeito esperado, se ele existir, é de apenas 29%. Mesmo assim, como obter mais dados seria difícil, vamos trabalhar com o que temos por enquanto.
+
+## Teste de Hipótese
+A hipótese a testar é um aumento no valor médio de vendas. Para isso, vamos usar o Teste T de Student. Primeiro, vamos se certificar que o erro do valor médio segue uma distribuição normal. Para isso, tomamos algumas amostras em grupos de 1000 observações e tomamos suas médias.
+
+![histograma](/images/hist1.png)
+
+*Histograma das médias das amostras*
+
+Como a distribuição aparenta ser próxima de uma normal, prosseguimos com o teste.
+
+O Teste T resultou em um Valor-P de 0,321.
+
