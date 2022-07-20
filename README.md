@@ -52,5 +52,11 @@ A hipótese a testar é um aumento no valor médio de vendas. Para isso, vamos u
 
 Como a distribuição aparenta ser próxima de uma normal, prosseguimos com o teste.
 
-O Teste T resultou em um Valor-P de 0,321.
+O Teste T resultou em um Valor-P de 0,321, bem maior que o *alpha* determinado de 0,05. Isso significa que não há diferença significativa entre o desempenho do sistema de compras com preenchimento automático ou manual. Esse resultado era esperado, pois o suposto efeito é muito pequeno, e o número de observações não era suficiente para realizar um teste com alto poder.
+
+O pequeno tamanho de efeito é visivelmente observável ao plotar um histograma das vendas. As duas distribuições são quase identicas, e um conjunto de dados muito grande seria necessário para encontrar tal efeito.
+
+![histograma de vendas](/images/hist2.png)
+
+*Histograma das vendas, separado por grupos)*
 
