@@ -60,3 +60,10 @@ O pequeno tamanho de efeito é visivelmente observável ao plotar um histograma 
 
 *Histograma das vendas, separado por grupos)*
 
+# Teste 3: Múltiplas Opções
+## Caso de Negócio
+Neste caso, o cliente seria a *Montana State University* (MSU). A universidade reparou que, no *website* da biblioteca, o botão "Interact" era clicado muito menos que os outros, e suspeitaram que isso se devia ao fato de alunos não entenderem o propósito do botão, ou que o texto fosse vago demais. Para testar esta hipótese, foi realizado um test A/B/n por um determinado período de tempo, onde qualquer visitante do *website* era aleatoriamente redirecionado a uma variante da página. O grupo controle viria a página original, com o botão "Interact", enquanto outros viriam uma versão alternativa, designadas "Connect", "Learn", "Help" ou "Services".
+
+## Dados
+Os dados do teste vêm na forma de planilhas 
+
