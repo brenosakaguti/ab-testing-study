@@ -62,8 +62,16 @@ O pequeno tamanho de efeito é visivelmente observável ao plotar um histograma 
 
 # Teste 3: Múltiplas Opções
 ## Caso de Negócio
-Neste caso, o cliente seria a *Montana State University* (MSU). A universidade reparou que, no *website* da biblioteca, o botão "Interact" era clicado muito menos que os outros, e suspeitaram que isso se devia ao fato de alunos não entenderem o propósito do botão, ou que o texto fosse vago demais. Para testar esta hipótese, foi realizado um test A/B/n por um determinado período de tempo, onde qualquer visitante do *website* era aleatoriamente redirecionado a uma variante da página. O grupo controle viria a página original, com o botão "Interact", enquanto outros viriam uma versão alternativa, designadas "Connect", "Learn", "Help" ou "Services".
+Neste caso, o cliente seria a *Montana State University* (MSU). A universidade reparou que, no *website* da biblioteca, o botão "Interact" era clicado muito menos que os outros, e suspeitaram que isso se devia ao fato de alunos não entenderem o propósito do botão, ou que o texto fosse vago demais. Para testar esta hipótese, foi realizado um teste A/B/n por um determinado período de tempo, onde qualquer visitante do *website* era aleatoriamente redirecionado a uma variante da página. O grupo controle viria a página original, com o botão "Interact", enquanto outros viriam uma versão alternativa, designadas "Connect", "Learn", "Help" ou "Services".
 
 ## Dados
-Os dados do teste vêm na forma de planilhas 
+Os dados do teste vêm na forma de planilhas contendo informações tais como o número de visitantes de cada página, o número total de cliques que a página recebeu e quantos cliques cada elemento da página foram registrados. No caso, estamos interessados em cliques no botão "Interact" e suas respectivas variações, então os dados de cada planilha foram compilados em uma única tabela.
 
+![tabela de clickes em webpages](/images/tabela_msu.png)
+
+*Tabela de dados*
+
+Com os dados que temos, há duas métricas possíveis a serem maximizadas: o número de cliques no botão por visitante do *website*, ou o número de cliques do botão dividido pelo número total de cliques. A decisão de que indicador é o mais importante depende do problema a ser resolvido. Por exemplo, se for assumido que o principal problema é uma alta *bounce rate*, isto é, que alunos que acessam a página rapidamente saem sem clicar, então a taxa de cliques por visitante seria uma prioridade a maximizar.
+
+## Teste de Hipóteses
+Testes foram realizados usando as duas métricas, clique/visitante e clique/total. Para começar, foi realizado um teste de chi-quadrado para determinar se existe um efeito real ou as diferenças poderiam ser explicadas por aleatoriedade. Ao calcular a tabela de contingência para os dados, foi optido um valor-p de 0, ou seja, é extremamente improvável que as diferenças em *click-through rate* sejam causados por um artefato aleatório, e existe um efeito real dependente do texto nos botões.
