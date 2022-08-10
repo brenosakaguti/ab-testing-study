@@ -67,7 +67,7 @@ Neste caso, o cliente seria a *Montana State University* (MSU). A universidade r
 ## Dados
 Os dados do teste vêm na forma de planilhas contendo informações tais como o número de visitantes de cada página, o número total de cliques que a página recebeu e quantos cliques cada elemento da página foram registrados. No caso, estamos interessados em cliques no botão "Interact" e suas respectivas variações, então os dados de cada planilha foram compilados em uma única tabela.
 
-![tabela de clickes em webpages](/images/tabela_msu.png)
+![tabela de cliquees em webpages](/images/tabela_msu.png)
 
 *Tabela de dados*
 
@@ -75,3 +75,13 @@ Com os dados que temos, há duas métricas possíveis a serem maximizadas: o nú
 
 ## Teste de Hipóteses
 Testes foram realizados usando as duas métricas, clique/visitante e clique/total. Para começar, foi realizado um teste de chi-quadrado para determinar se existe um efeito real ou as diferenças poderiam ser explicadas por aleatoriedade. Ao calcular a tabela de contingência para os dados, foi optido um valor-p de 0, ou seja, é extremamente improvável que as diferenças em *click-through rate* sejam causados por um artefato aleatório, e existe um efeito real dependente do texto nos botões.
+
+Após verificar que o efeito existe, foram realizados testes-Z entre o grupo controle e cada uma das variantes. Os valores-p resultantes foram então corrigidos usando o método de Bonferroni.
+
+![tabela de cliques por visitantes](/images/tabela_msu2.png)
+
+*Tabela de cliques por visitante*
+
+![tabela de cliques por total](/images/tabela_msu3.png)
+
+*Tabela de cliques por cliques totais*
