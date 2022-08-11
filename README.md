@@ -2,6 +2,11 @@
 ## Introdução
 Este será uma breve demonstração de como testes A/B podem ser utilizados em situações de negócios. Os códigos, cálculos e explicações adicionais estão localizados em [ab-testing.ipynb](https://github.com/brenosakaguti/ab-testing-study/blob/main/ab-testing.ipynb) (em inglês)
 
+## Índice
+* [Teste 1: Taxa de Conversão](#teste-1-taxa-de-conversão)
+* [Teste 2: Valor de Vendas](#teste-2-valor-de-vendas)
+* [Teste 3: Múltiplas Opções](#teste-3-múltiplas-opções)
+
 # Teste 1: Taxa de Conversão
 ## Caso de Negócio
 Neste cenário, analisamos dados de um *website* de *e-commerce* que está considerando uma mudança em seu *design* de *webpage*. No *design* anterior, o *website* tinha uma taxa de conversão de visitantes de 13%, e espera-se que a mudança de *design* aumente a taxa de conversão para 15%.
@@ -85,3 +90,5 @@ Após verificar que o efeito existe, foram realizados testes-Z entre o grupo con
 ![tabela de cliques por total](/images/tabela_msu3.png)
 
 *Tabela de cliques por cliques totais*
+
+Todas as variantes exceto "Learn" tiveram um resultado estatisticamente significativo em âmbas as métricas. Qual variante é a melhor, porém, depende do aspecto que se deseja maximizar. A variante "Services" teve a maior taxa de cliques/visitante, enquanto "Connect" teve maior cliques/total.
